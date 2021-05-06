@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hcho1989/smart-contract-exercise-1#readme",
   "devDependencies": {
+    "@aave/protocol-v2": "^1.0.1",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts-upgradeable": "^4.1.0",
