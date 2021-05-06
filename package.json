@@ -1,0 +1,22 @@
+{
+  "name": "smart-contract-exercise-1",
+  "version": "1.0.0",
+  "description": "hardhat + openzepplin upgrad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcho1989/smart-contract-exercise-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcho1989/smart-contract-exercise-1/issues"
+  },
+  "homepage": "https://github.com/hcho1989/smart-contract-exercise-1#readme",
+  "devDependencies": {
+    "hardhat": "^2.2.1"
+  }
+}
