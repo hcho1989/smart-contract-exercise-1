@@ -6,4 +6,10 @@ async function main() {
   console.log("MyContract upgraded to ");
 }
 
-main();
+// exit with 1 if error is catched
+main()
+  .then(() => process.exit(0))
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  });
