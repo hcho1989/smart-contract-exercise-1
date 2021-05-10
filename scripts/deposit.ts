@@ -1,5 +1,6 @@
 import { Contract } from "@ethersproject/contracts";
 import {ethers} from "hardhat";
+import { IERC20Upgradeable, IMyContract } from "typechain/dist/TypeChain";
 
 import {abi} from "../artifacts/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol/IERC20Upgradeable.json"
 
@@ -15,9 +16,9 @@ async function main() {
   const myAddress = await mywallet.getAddress();
   
   // token contracts
-  const daiContract = await ethers.getContractAt(abi, daiContractAddress)
-  const aDaiContract = await ethers.getContractAt(abi, aDaiContractAddress)
-  const myContract = await ethers.getContractAt("MyContract", myContractAddr)
+  const daiContract = (await ethers.getContractAt(abi, daiContractAddress)) as IERC20Upgradeable;
+  const aDaiContract = (await ethers.getContractAt(abi, aDaiContractAddress)) as IERC20Upgradeable;
+  const myContract = (await ethers.getContractAt("MyContract", myContractAddr)) as IMyContract;
   
   // check balance
   console.log("my balanceOf aDAI", await checkBalance(aDaiContract, myAddress))                                 // 0x00

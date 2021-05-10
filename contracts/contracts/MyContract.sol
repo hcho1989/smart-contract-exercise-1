@@ -6,10 +6,10 @@ import "hardhat/console.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
-import {ILendingPool as IAaveLendingPool} from "./interfaces/ILendingPool.sol";
-import {DataTypes as AaveDataTypes} from "./types/DataTypes.sol";
-import {ILendingPoolAddressesProvider as IAaveLendingPoolAddressesProvider} from "./interfaces/ILendingPoolAddressesProvider.sol";
-import "./interfaces/IMyContract.sol";
+import {ILendingPool as IAaveLendingPool} from "../interfaces/ILendingPool.sol";
+import {DataTypes as AaveDataTypes} from "../types/DataTypes.sol";
+import {ILendingPoolAddressesProvider as IAaveLendingPoolAddressesProvider} from "../interfaces/ILendingPoolAddressesProvider.sol";
+import "../interfaces/IMyContract.sol";
 
 
 contract MyContract is Initializable, ContextUpgradeable, IMyContract {
